@@ -1,23 +1,23 @@
 /*
  * @Author: your name
- * @Date: 2020-05-25 21:33:58
- * @LastEditTime: 2020-06-07 20:21:38
+ * @Date: 2020-06-07 10:35:48
+ * @LastEditTime: 2020-06-07 20:52:07
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
- * @FilePath: /pronext-react/src/views/index/index.js
+ * @FilePath: /pronext-react/src/views/team/index.js
  */
-import Index from './Index.jsx';
-import { isString, isNumber, isBoolean } from '@/modules/types';
+
+import Team from './Team.jsx';
+import { isString, isNumber } from '@/modules/types';
 
 let a = 'abc';
 let b = 123;
-let c = true;
 
 if (isString(a) !== isNumber(b)) {
     b = 'cba';
 }
 
-console.log(isBoolean(c));
+console.log(233333);
 
 let promise = new Promise(resolve => {
     let handler = setTimeout(() => {
@@ -32,4 +32,8 @@ promise.then(result => {
     console.log(result);
 });
 
-export default Index;
+let d = new Map();
+let e = new Set();
+console.log(d, e);
+
+export default Team;

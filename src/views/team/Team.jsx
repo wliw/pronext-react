@@ -1,13 +1,13 @@
 import React from 'react';
 
-class Index extends React.Component {
+class Team extends React.Component {
     render () {
         return (
-            <div>index</div>
+            <div>Team</div>
         );
     }
 }
 
-const Container = () => <Index />;
+const Container = () => <Team />;
 
 export default Container;

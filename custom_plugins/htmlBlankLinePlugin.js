@@ -20,7 +20,7 @@ class HtmlBlankLinePlugin {
                 // 多个script换行加多空格
                 html = html.replace(/(script>)(<script)/g, '$1\n$2');
                 // body结束表情加换行
-                html = html.replace(/<\/(body)>/g, '\n</$1>');
+                html = html.replace(/<\/(head|body)>/g, '\n</$1>');
                 // body开始标签去除第一个子标签的多空格
                 html = html.replace(/<body(.*)>(\n\s+)/, '<body$1>\n');
 
