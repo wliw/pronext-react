@@ -1,23 +1,20 @@
 /*
  * @Author: your name
  * @Date: 2020-05-25 21:33:58
- * @LastEditTime: 2020-06-07 20:21:38
+ * @LastEditTime: 2020-06-07 21:57:46
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /pronext-react/src/views/index/index.js
  */
 import Index from './Index.jsx';
-import { isString, isNumber, isBoolean } from '@/modules/types';
+import { isString, isNumber } from '@/modules/types';
 
 let a = 'abc';
 let b = 123;
-let c = true;
 
 if (isString(a) !== isNumber(b)) {
     b = 'cba';
 }
-
-console.log(isBoolean(c));
 
 let promise = new Promise(resolve => {
     let handler = setTimeout(() => {
